@@ -16,7 +16,7 @@ https://my-as05.streamlit.app/
 ## Instalação e Configuração
 
 1. **Clone o Repositório:**
-   git clone https://your-repository-url.git
+   git clone git@github.com:SamuelVLC/AS05.git
    cd your-repository-name
 
 2. **Crie um Ambiente Virtual (Recomendado):**
