@@ -38,7 +38,11 @@ https://my-as05.streamlit.app/
    faiss-cpu
    altair==4
    tiktoken
-    ```
+   transformers
+   torch
+   langchain-community
+
+   ```
 4. **Configure a sua Chave da API da OpenAI:**
 
    * Crie um arquivo `.streamlit/secrets.toml` no diretório do projeto e adicione sua chave da API da OpenAI:
