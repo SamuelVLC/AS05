@@ -20,13 +20,13 @@ https://my-as05.streamlit.app/
    cd your-repository-name
 
 2. **Crie um Ambiente Virtual (Recomendado):**
-   Garante que voce tenha o conda instalado antes:
    ```
    conda --version
    wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
    bash Miniconda3-latest-Linux-x86_64.sh
    source ~/.bashrc
    conda --version
+   rm Miniconda3-latest-Linux-x86_64.sh
    ```
    ```
    conda create -p venv python==3.10
