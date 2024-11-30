@@ -20,11 +20,17 @@ https://my-as05.streamlit.app/
    cd your-repository-name
 
 2. **Crie um Ambiente Virtual (Recomendado):**
+   Garante que voce tenha o conda instalado antes:
    ```
-
+   conda --version
+   wget https://repo.anaconda.com/miniconda/Miniconda3-latest-Linux-x86_64.sh
+   bash Miniconda3-latest-Linux-x86_64.sh
+   source ~/.bashrc
+   conda --version
+   ```
+   ```
    conda create -p venv python==3.10
-   python3 -m venv venv
-   source venv/bin/activate   
+   conda activate venv
    ```
 3. **Instale as Dependências:**
    ```
@@ -32,29 +38,29 @@ https://my-as05.streamlit.app/
    ```
    Assegure-se de que as versões listadas em requirements.txt estão corretas para evitar possíveis incompatibilidades:
    ```
-   langchain==0.0.184
-   PyPDF2==3.0.1
-   python-dotenv==1.0.0
-   streamlit==1.18.1
-   openai==0.27.6
-   faiss-cpu
-   altair==4
-   tiktoken
-   transformers
-   torch
-   langchain-community
+    streamlit
+    google-generativeai
+    python-dotenv
+    langchain
+    PyPDF2
+    chromadb
+    faiss-cpu
+    langchain_google_genai
+    langchain==0.2.17
+    langchain-core==0.2.43
+    langchain-community
    ```
 4. **Configure a sua Chave da API da OpenAI:**
 
    * Crie um arquivo `.streamlit/secrets.toml` no diretório do projeto e adicione sua chave da API da OpenAI:
    ```
-     OPENAI_API_KEY= "sua_chave_api_aqui"
+     GOOGLE_API_KEY= "sua_chave_api_aqui"
    ```
 5. **inicie o Aplicativo:**
    ```
-   streamlit run app.py
+    /home/your_user/AS05/venv/bin/streamlit run app.py
    ```
-   O aplicativo será aberto automaticamente no seu navegador
+   O aplicativo será aberto automaticamente no seu navegador localmente
 
 ## Como usar
 
