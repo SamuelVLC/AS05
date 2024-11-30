@@ -41,7 +41,7 @@ https://my-as05.streamlit.app/
     ```
 4. **Configure a sua Chave da API da OpenAI:**
 
-   * Crie um arquivo `.env` no diretório do projeto e adicione sua chave da API da OpenAI:
+   * Crie um arquivo `.streamlit/secrets.toml` no diretório do projeto e adicione sua chave da API da OpenAI:
    ```
      OPENAI_API_KEY=sua_chave_api_aqui
    ```
