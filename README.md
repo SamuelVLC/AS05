@@ -24,10 +24,11 @@ https://my-as05.streamlit.app/
    source venv/bin/activate   
 
 3. **Instale as Dependências:**
+   ```
    pip install -r requirements.txt
-
+   ```
    Assegure-se de que as versões listadas em requirements.txt estão corretas para evitar possíveis incompatibilidades:
-
+   ```
    langchain==0.0.184
    PyPDF2==3.0.1
    python-dotenv==1.0.0
@@ -36,17 +37,22 @@ https://my-as05.streamlit.app/
    faiss-cpu
    altair==4
    tiktoken
-   
+    ```
 4. **Configure a sua Chave da API da OpenAI:**
 
    * Crie um arquivo `.env` no diretório do projeto e adicione sua chave da API da OpenAI:
+   ```
      OPENAI_API_KEY=sua_chave_api_aqui
-
+   ```
 5. **inicie o Aplicativo:**
+   ```
    streamlit run app.py
+   ```
+   
+   ```
    O aplicativo será aberto automaticamente no seu navegador
-
-## Uso
+   ```
+## Como usar
 
 1. **Carregue seus PDFs:** Utilize a barra lateral para fazer upload de um ou mais arquivos PDF.
 2. **Clique em "Processar":** O sistema irá processar os arquivos e gerar um índice.
