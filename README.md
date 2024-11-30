@@ -41,7 +41,6 @@ https://my-as05.streamlit.app/
    transformers
    torch
    langchain-community
-
    ```
 4. **Configure a sua Chave da API da OpenAI:**
 
