@@ -1,4 +1,5 @@
 # Samuel Lobo Chiodi
+# 30/11/2024
 
 #-------------------------------------------------------------------------------------------------------------------------- Extract data from pdf
 import streamlit as st
@@ -67,8 +68,7 @@ def handle_userinput(user_question):
 #-------------------------------------------------------------------------------------------------------------------------- Main function
 def main():
     load_dotenv()
-    st.set_page_config(page_title="Talking to PDFs",
-                       page_icon=":school_satchel:")
+    st.set_page_config(page_title="PDF Genie", page_icon=":magic_wand: :page_facing_up:")
     st.write(css, unsafe_allow_html=True)
 
     if "conversation" not in st.session_state:
@@ -76,12 +76,12 @@ def main():
     if "chat_history" not in st.session_state:
         st.session_state.chat_history = None
 
-    st.title("PUC MINAS")  # Title
+    st.title("PUC MINAS - Tópicos 3")  # Title
     st.header('Engenharia de Computação | 2/2024')
-    st.header(':blue[Talking with PDFs] :books:')
-    st.text("Tópicos em Computação III \nProf.: Dr. Wladmir Cardoso Brandão\nAluno: Samuel Lobo Chiodi\n")
-    st.text("Este é um assistente baseado em LLM capaz de indexar vetores de uma coleção de \ndocumentos PDF que responde perguntas feitas")
-    user_question = st.text_input("Faça uma pergunta sobre o(s) arquivo(s) enviado(s):")
+    st.header(':blue[PDF Genie] :magic_wand: :page_facing_up:')
+    st.text("Tópicos em Computação III \nProf.: Wladmir Cardoso Brandão\nAluno: Samuel Lobo Chiodi\n")
+    st.text("Este é um assistente baseado em LLM capaz de indexar vetores de uma coleção de \ndocumentos PDF que responde perguntas feitas sobre os arquivos lidos")
+    user_question = st.text_input("Faça uma pergunta sobre os PDFs enviados:")
     if user_question:
         handle_userinput(user_question)
 #----------------------------------------------------------------------------------------------------------------------- PDFs processing
