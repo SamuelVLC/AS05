@@ -48,10 +48,8 @@ https://my-as05.streamlit.app/
    ```
    streamlit run app.py
    ```
-
-   ```
    O aplicativo será aberto automaticamente no seu navegador
-   
+
 ## Como usar
 
 1. **Carregue seus PDFs:** Utilize a barra lateral para fazer upload de um ou mais arquivos PDF.
