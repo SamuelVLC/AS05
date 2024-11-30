@@ -21,6 +21,8 @@ https://my-as05.streamlit.app/
 
 2. **Crie um Ambiente Virtual (Recomendado):**
    ```
+
+   conda create -p venv python==3.10
    python3 -m venv venv
    source venv/bin/activate   
    ```
