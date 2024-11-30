@@ -6,3 +6,6 @@ openai==0.27.6
 faiss-cpu
 altair==4
 tiktoken
+transformers
+torch
+langchain-community
