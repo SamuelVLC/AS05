@@ -20,9 +20,10 @@ https://my-as05.streamlit.app/
    cd your-repository-name
 
 2. **Crie um Ambiente Virtual (Recomendado):**
+   ```
    python3 -m venv venv
    source venv/bin/activate   
-
+   ```
 3. **Instale as Dependências:**
    ```
    pip install -r requirements.txt
